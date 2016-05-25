@@ -1,0 +1,118 @@
+﻿Availability:Public
+Title:システム設定
+Crumbs: %ROOT%, Engine
+Description:ハードウェアの特性に基づいてゲームやエンジンの特定分野を制御するプラットフォーム固有の設定コレクション
+
+
+[TOC (start:2 end:3)]
+
+ 
+
+
+
+## 概要
+
+アンリアル・エンジン 4は「`FSystemSettings`」クラスを用いて様々なパフォーマンス関連機能を制御します。このクラスは「`Engine.ini`」ファイルの「`[SystemSettings]`」セクションから初期化されます。
+
+以下のセクションに、「SystemSettings」を介して制御が可能なさまざまな設定詳細を示します。INI設定は文字通り変数の文字列名で、変数の種類はサポートされる値を決定します。例として「`EngineIni[SystemSettings]`」を参照してください。
+
+
+
+## Texture LOD Settings（テクスチャLOD設定）
+
+テクスチャ解像度とその詳細を制御するための設定を説明する情報を、[Texture Support and Settings](Engine/Content/Types/Textures/SupportAndSettings) ページで参照することができます。
+
+
+
+## World Detail Settings（ワールド詳細設定）
+
+$ **DetailMode**: (int32) (1-3) 現在の [Detail] モードです。アクタのコンポーネントを更新/ティックさせるかを決定します。「Scene.uc」にあるEDetailModeの列挙型変数に対応します。PrimitiveComponentで設定されて、WorldSettings.GetDetailMode()に返されます。
+$ **SpeedTreeLeaves**: (bool) SpeedTreeのLeaves（葉）のレンダリングを許可するかどうか。
+$ **SpeedTreeFronds**: (bool) SpeedTreeのFronds（葉状体）のレンダリングを許可するかどうか。
+$ **StaticDecals**: (bool) 静的デカールを許可するかどうか。
+$ **DynamicDecals**: (bool) 動的デカールを許可するかどうか。
+$ **UnbatchedDecals**: (bool) スタティック描画リストにはまだ配置されていないけれども動的ビューに関連性があるデカールを許可するかどうか。 
+$ **DecalCullDistanceScale**: (float) 距離カリングデカールのスケール係数を許可するかどうか。
+$ **DynamicLights**: (bool) 動的ライトを許可するかどうか。
+$ **CompositeDynamicLights**: (bool) ライト背景へ動的ライトの合成を許可するかどうか。
+$ **HighQualityLightmaps**: (bool) マテリアルの法線とスペキュラを使用する指向性ライトマップを許可するかどうか。 
+$ **MotionBlur**: (bool) モーションブラーを許可するかどうか。
+$ **MotionBlurPause**: (bool) モーションブラーの一時停止を許可するかどうか。
+$ **DepthOfField**: (bool) DOF （Depth of field:被写界深度）を許可するかどうか。
+$ **AmbientOcclusion**: (bool) アンビエントオクルージョンを許可するかどうか。
+$ **Bloom**: (bool) ブルームを許可するかどうか。
+$ **UseHighQualityBloom**: (bool) 高品質のブルームまたは高速バージョンのブルームを許可するかどうか。
+$ **Distortion**: (bool) 歪み（ディスト―ション）を許可するかどうか。
+$ **FilteredDistortion**: (bool) 適用パス中にシーンカラーをサンプリングする際にバイリニアフィルタを利用した歪み（ディスト―ション）を許可するかどうか。
+
+$ **DropParticleDistortion**: 
+(bool) 「WorldSettings::bDropDetail」に基づいてパーティクル上に落とす歪み（ディスト―ション）を許可するかどうか。 
+
+$ **LensFlares**: (bool) LensFlaresのレンダリングを許可するかどうか。
+$ **FogVolumes**: (bool) フォグボリュームを許可するかどうか。
+$ **OneFrameThreadLag**: (bool) ゲームスレッドから1フレーム遅れたレンダリングスレッドを許可するかどうか。
+$ **SkeletalMeshLODBias**: (int32) スケルタルメッシュのLODバイアスです。
+$ **ParticleLODBias**: (int32) パーティクルシステムのLODバイアスです。
+
+
+
+## Fractured Detail Settings（フラクチャ（破砕）詳細設定）
+
+$ **bAllowFracturedDamage**: (bool) フラクチャメッシュが受けるダメージを許可するかどうか。
+$ **NumFracturedPartsScale**: (float) 指定されたゲーム固有のフラクチャ物理オブジェクト数をスケーリングします。
+$ **FractureDirectSpawnChanceScale**: (float) フラクチャスタティックメッシュが直接ダメージを受けた後に、剛体がスポーンする可能性を % で表します。 [0-1] 
+$ **FractureRadialSpawnChanceScale**: (float) フラクチャスタティックメッシュが放射状の爆発でダメージを受けた後に、剛体がスポーンする可能性を % で表します。  [0-1] 
+$ **FractureCullDistanceScale**: (float) ダメージを受けた時に、スタティックメッシュに実際のフラクチャを許可する際に使用する距離スケールです。 
+
+
+
+## Shadow Detail Settings（シャドウ詳細設定）
+
+$ **DynamicShadows**: (bool) 動的シャドウを許可するかどうか。
+$ **MinShadowResolution**: (int32) シャドウの影響を受ける深度をレンダリングする最少ディメンション（テクセル単位）です。 
+$ **MaxShadowResolution**: (int32) シャドウの影響を受ける深度をレンダリングする最大ディメンション（テクセル単位）です。
+$ **ShadowTexelsPerPixel**: (float) シャドウテクセルに対して影響を受けるピクセルの比率です。
+$ **ShadowDepthBias**: (float) VSMを除く投影されたシャドウの全タイプの深度パスに適用される深度バイアスです。 
+$ **ShadowFadeResolution**: (int32) シャドウがフェードアウトする解像度をテクセルで表します。 
+$ **ShadowFadeExponent**: (float) シャドウがフェードアウトする速度を制御します。 
+
+
+
+## Texture Detail Settings（テクスチャ詳細設定）
+
+$ **OnlyStreamInTextures**: (bool) 有効な場合、テクスチャはストリームインされるのみでストリームアウトされません。
+$ **MaxAnisotropy**: (int32) 使用する異方性の最大レベルです。
+$ **FoliageDrawRadiusMultiplier**: (float) フォーリッジを描画する距離のスカラー量です。 
+
+
+
+## VSync Settings（VSync設定）
+
+$ **UseVSync**: (bool) VSyncの有効を許可するかどうか。
+
+
+
+## Screen Percentage Settings（画面サイズ比率設定）
+
+$ **ScreenPercentage**: (float) メインビューが占有する画面の割合です。
+$ **UpscaleScreenPercentage**: (bool) フロントバッファを完全に占有するためにスクリーンのアップスケールを許可するかどうか。
+
+
+
+## Resolution Settings（解像度設定）
+
+$ **ResX**: (int32) スクリーン X の解像度に設定。 
+$ **ResY**: (int32) スクリーン Y の解像度に設定。
+$ **Fullscreen**: (bool) フルスクリーンに設定。
+
+
+
+## Mesh Settings（メッシュ設定）
+
+$ **bForceCPUAccessToGPUSkinVerts**: (bool) CPUによるGPUスキン頂点データへの強制アクセスの有効または無効を設定します。 
+
+ 
+
+
+
+

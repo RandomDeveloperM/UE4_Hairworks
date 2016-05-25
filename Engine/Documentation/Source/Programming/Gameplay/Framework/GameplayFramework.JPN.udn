@@ -1,0 +1,12 @@
+﻿INTSourceChangelist:2099361
+Availability:Public
+Title: ゲームプレイ フレームワーク
+Crumbs:%ROOT%, Programming
+Description: ゲームルール、プレーヤー入力や制御、カメラ、ユーザーインターフェースなどのコアシステム
+
+
+[OBJECT:Redirect]
+[PARAM:link]
+[](Gameplay/Framework)
+[/PARAM]
+[/OBJECT]

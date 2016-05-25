@@ -1,0 +1,54 @@
+Title:4. Set Up Your Oculus Rift DK2 Hardware
+Crumbs:%ROOT%, Platforms, Platforms/Oculus, Platforms/Oculus/QuickStart
+Description:Connect and update your Oculus Rift headset.
+Availability:Public
+Version: 4.9
+SkillLevel: Intermediate
+
+[VAR:Steps]
+[OBJECT:Navigation]
+	[PARAM:previous]
+		[Previous Step](Platforms/Oculus/QuickStart/3 "%Platforms/Oculus/QuickStart/3:title%")
+	[/PARAM]
+	[PARAM:current]
+	[/PARAM]
+	[PARAM:home]
+		[Quick Start Home](Platforms/Oculus/QuickStart)
+	[/PARAM]
+	[PARAM:next]
+		[Next Step](Platforms/Oculus/QuickStart/5 "%Platforms/Oculus/QuickStart/5:title%")
+	[/PARAM]
+[/OBJECT]
+[/VAR]
+
+In this section we will look at how you connect your Oculus HMD to your PC and set it up to see if it is working with the 0.7.0 Oculus BETA drivers.
+
+%Steps%
+
+1. Connect your DK2 headset to your computer, following the included Instruction Manual (which can also be found [online](http://static.oculus.com/sdk-downloads/documents/Oculus_Rift_DK2_Instruction_Manual.pdf)).
+
+1. Run the **Oculus Configuration Utility** by **Right-clicking** on the Oculus icon in the system tray and selecting **Configuration Utility**.
+
+	![](Oculus_Config_Utility.png)
+
+1. When opened, the Oculus Configuration Utility will look like the following image.
+
+	![](Oculus_Config_Utility.png)
+
+1. Under the **User** section press the **Plus Sign** to add a new User profile. 
+
+	![](Oculus_Config_Add_Profile.png)
+
+1. In the **New User** pop up box that is displayed enter a name for the profile and then click the **OK** button.. 
+
+	![](Oculus_Config_Name_Profile.png)
+
+1. Then set the in the User section set the **Gender** to the gender of the person using the Head Mounted Display(HMD) and set the **Player Height** to that persons height.
+
+	![](Oculus_Config_Setup_Profile.png)
+
+1. Click the **Show Demo Scene** button on the Oculus Configuration Utility and you should now see something similar to the following image being displayed on screen as well as being displayed in the HMD.
+
+	![](Oculus_Config_Demo_Sceen.png)
+
+%Steps%

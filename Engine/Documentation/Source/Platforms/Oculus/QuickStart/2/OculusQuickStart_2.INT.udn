@@ -1,0 +1,49 @@
+Title:2. Download the Oculus Runtime
+Crumbs:%ROOT%, Platforms, Platforms/Oculus, Platforms/Oculus/QuickStart
+Description:Download the needed software for running games on the Oculus Rift
+Availability:Public
+Version: 4.9
+SkillLevel: Intermediate
+
+[VAR:Steps]
+[OBJECT:Navigation]
+	[PARAM:previous]
+		[Previous Step](Platforms/Oculus/QuickStart/1 "%Platforms/Oculus/QuickStart/1:title%")
+	[/PARAM]
+	[PARAM:current]
+	[/PARAM]
+	[PARAM:home]
+		[Quick Start Home](Platforms/Oculus/QuickStart)
+	[/PARAM]
+	[PARAM:next]
+		[Next Step](Platforms/Oculus/QuickStart/3 "%Platforms/Oculus/QuickStart/3:title%")
+	[/PARAM]
+[/OBJECT]
+[/VAR]
+
+In this section we will go over which version of the Oculus PC Runtime drivers you need to download and where you can download them from.
+
+%Steps%
+
+
+[REGION:note]
+The version of the Oculus Runtime that is currently compatible with the latest version of Unreal Engine 4 is **Oculus SDK v0.7.0.0-BETA**. 
+[/REGION]
+
+
+1. From the web browser of your choice go to the Oculus Developer webpage by clicking on the link below.
+	
+	[https://developer.oculus.com/](https://developer.oculus.com/) 
+
+1. Download the [PC RUNTIME( v0.7.0.0-BETA)](https://developer.oculus.com/downloads/pc/0.7.0.0-beta/Oculus_Runtime_for_Windows/) by clicking on the **PC RUNTIME(V0.7.0-BETA)** button.
+
+	![](Downloads.png)
+
+1. Once you have clicked on the download button you will be brought to the webpage below. 
+ Make sure to read the EULA and Terms of Use and if you agree to them then click on the box indicating you do and then the Download button will become available.
+ Click on the **DOWNLOAD** button to begin the driver download.
+
+	![](3-oculus-eula.png)
+
+
+%Steps%

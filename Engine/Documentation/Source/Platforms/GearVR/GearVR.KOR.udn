@@ -1,0 +1,28 @@
+﻿INTSourceChangelist:2602692
+Title: 삼성 Gear VR 개발
+Description:UE4 에서 삼성 Gear VR 헤드셋을 사용하기 위한 안내입니다.
+Availability:Public
+Navigation:platform
+Platform:Gear VR
+Skilllevel: Intermediate
+Version: 4.8
+prereq: Engine\Blueprints\GettingStarted
+
+
+[OBJECT:TopicButtonList]
+	[PARAM:icon]
+		![](%ROOT%/vr_icon.png)(convert:false)
+	[/PARAM]
+	[PARAM:title]
+		기어 VR 개발
+	[/PARAM]
+	[PARAM:description]
+	[/PARAM]
+	[PARAM:links]
+		* [](Platforms/GearVR/Prerequisites "%Platforms/GearVR/Prerequisites:description%")
+		* [](Platforms/GearVR/QuickStart "%Platforms/GearVR/QuickStart:description%")
+		* [](Platforms/GearVR/GlobalMenu "%Platforms/GearVR/GlobalMenu:description%")
+		* [](Platforms/GearVR/BestPractices "%Platforms/GearVR/BestPractices:description%")
+		* [](Platforms/GearVR/Debugging "%Platforms/GearVR/BestPractices:description%")
+	[/PARAM]
+[/OBJECT]

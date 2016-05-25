@@ -1,0 +1,12 @@
+﻿INTSourceChangelist:2099361
+Availability:Public
+Title:キャラクター
+Crumbs:%ROOT%, Gameplay, Gameplay/Framework, Gameplay/Framework/Pawn
+Description:**キャラクター** とは、デフォルト設定が基本的な二足歩行の動作機能を持つポーンです。
+
+
+[OBJECT:Redirect]
+[PARAM:link]
+[](Gameplay/Framework/Pawn/Character)
+[/PARAM]
+[/OBJECT]
