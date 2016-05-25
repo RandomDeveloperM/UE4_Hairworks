@@ -1,0 +1,63 @@
+﻿INTSourceChangelist:2610045
+Availability:Public
+Title:2 - ビューポートの操作
+Crumbs:%ROOT%, GettingStarted, Engine/QuickStart
+Description:様々なビューポートの操作を学びましょう 
+SkillLevel:初心者
+Version:4.8
+Related:Engine/UI/LevelEditor/Viewports
+Related:Engine/Levels
+Related:Engine/UI/LevelEditor/Viewports/ViewportControls
+
+[VAR:Steps]
+[OBJECT:Navigation]
+	[PARAM:previous]
+		[前のステップ](Engine/QuickStart/1 "%Engine/QuickStart/1:title%")
+	[/PARAM]
+	[PARAM:current]
+	[/PARAM]
+	[PARAM:home]
+		[クイックスタート ホーム](Engine/QuickStart)
+	[/PARAM]
+	[PARAM:next]
+		[次のステップ](Engine/QuickStart/3 "%Engine/QuickStart/3:title%")
+	[/PARAM]
+[/OBJECT]
+[/VAR]
+
+%Steps%
+
+プロジェクトを開いて準備でできると、まず最初にアンリアル エディタの真ん中の [**ビューポート**](Engine/UI/LevelEditor/Viewports) に目が向くと思います。 
+
+![](TableAndChairs.png)(w:720)
+
+レベル構築のほとんどは、ビューポートで済ますことができます。前のステップで選択したテンプレート プロジェクトに含まれている小さなサンプル [**レベル**](Engine/Levels) とアセットを使って、作業を開始します。 
+この小さな領域をリファレンスのポイントとして使用して、UNREAL ENGINEのビューポートの遷移に一番よく使う方法で [**ビューポート カメラ コントロール**](Engine/UI/LevelEditor/Viewports/ViewportControls) に慣れていきましょう。 
+
+
+## スタンダードコントロール
+
+[INCLUDE:Engine\UI\LevelEditor\Viewports\ViewportControls#StandardControls]
+
+[REGION:tip]
+[**Orthographic View**](https://wiki.unrealengine.com/Videos/Player?series=PLZlv_N0_O1gasd4IcOe9Cx9wHoBB7rxFl&video=RoiQOwCg-4Q) へ切り替えるには、**Perspective** ドロップダウンをクリックして、Orthographic ビューモードを選択します。 
+
+![](OrthographicViews.png)
+[/REGION]
+
+## WASD フライコントロール
+
+[INCLUDE:Engine\UI\LevelEditor\Viewports\ViewportControls#GameControls]
+
+## ALT　フォーカスコントール
+
+[INCLUDE:Engine\UI\LevelEditor\Viewports\ViewportControls#MayaLikeControls]
+
+## 結果
+
+ビューポートの遷移方法を何通りか理解し、レベル内でカメラを自由に移動させる方法が分かったと思います。 
+レベルの作成中はカメラをかなり大きく移動することになるので、精度が必要となる場合はいつでも他の方法に切り替えてください。 
+
+次のステップでは、**新規レベル** を作成し、サンプル領域を作成または所有して、アセットを追加していきます。 
+
+%Steps%
